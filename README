@@ -1,0 +1,40 @@
+# CRUD API con Express y MongoDB (login y futura erp)
+
+## Descripción
+
+Esta es una aplicación de backend para gestionar tareas, utilizando Express.js y MongoDB. Permite a los usuarios registrarse, iniciar sesión, crear, leer, actualizar y eliminar tareas. La aplicación utiliza JSON Web Tokens (JWT) para la autenticación y protección de rutas.
+
+## Tecnologías
+
+- **Node.js**: Entorno de ejecución para el backend.
+- **Express.js**: Framework para la creación de APIs.
+- **MongoDB**: Base de datos NoSQL para almacenar usuarios y tareas.
+- **Mongoose**: ODM para interactuar con MongoDB.
+- **jsonwebtoken**: Biblioteca para generar y verificar tokens JWT.
+- **bcryptjs**: Biblioteca para encriptar contraseñas.
+- **morgan**: Middleware para el registro de solicitudes HTTP.
+- **cookie-parser**: Middleware para el manejo de cookies.
+
+## Otros
+npm (Node Package Manager) es el gestor de paquetes predeterminado para el entorno de ejecución de JavaScript Node.js
+
+El package.json sirve para identificar su proyecto y comprender cómo manejar las dependencias del proyecto. 
+Es el archivo package.json que permite a npm iniciar su proyecto, ejecutar scripts, instalar dependencias, 
+publicar en el registro de NPM y muchas otras tareas útiles.
+
+El archivo package-lock.json es un componente clave en el ecosistema de npm y se utiliza junto con el archivo package.json 
+para gestionar las dependencias de un proyecto Node.js
+
+Carpeta routes: Urls del backend, todas la rutas o endpoints que el frontend puede pedir
+Carpeta controllers: Funciones que se ejecutan cuando visitan una url
+Carpeta models: Los modelos de datos de nuestra base de datos
+Carpeta middlewares: Rutas protegidas para usuarios autentificados
+Carpeta schemas: validaciones de datos, etc...
+Carpeta libs: codigo reinportable
+
+app.js: codigo principal del backend
+config.js: configuracion de la base de datos
+db.js: conexion con la base de datos
+index.js llamada o arranque del codigo principal, de la base de datos, otros servicios, etc...
+
+npm run dev
